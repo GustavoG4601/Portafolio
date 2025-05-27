@@ -1,0 +1,314 @@
+/* Archivo de animaciones adicionales */
+
+/* Animación de revelación en scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación de carga inicial */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Animaciones de hover para tarjetas de proyectos */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(56, 182, 255, 0), rgba(56, 182, 255, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* Efectos de partículas en el fondo */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    background-color: rgba(56, 182, 255, 0.3);
+    border-radius: 50%;
+}
+
+/* Animación de botones */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Animación para el logo */
+.logo {
+    position: relative;
+    display: inline-block;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.logo:hover::before {
+    width: 100%;
+}
+
+/* Animación para las skills */
+.skill-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(56, 182, 255, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-card:hover::after {
+    opacity: 1;
+}
+
+/* Animación para la imagen de perfil */
+@keyframes hueRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(30deg);
+    }
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}
+
+.profile-img {
+    animation: fadeIn 0.8s ease forwards, float 5s ease-in-out infinite, hueRotate 15s infinite linear;
+    animation-delay: 0.8s, 0.8s, 0s;
+}
+
+/* Efecto de brillo para botones */
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(56, 182, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(56, 182, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(56, 182, 255, 0.5);
+    }
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-dark);
+    box-shadow: 0 8px 20px rgba(56, 182, 255, 0.6);
+    /* Mantenemos un efecto de brillo pero sin animación problemática */
+    transform: translateY(-3px);
+}
+
+/* Animación para el cursor de texto */
+@keyframes blink-cursor {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-title::after {
+    content: '|';
+    animation: blink-cursor 0.8s infinite;
+    color: var(--primary);
+    margin-left: 5px;
+    display: none;
+}
+
+/* Animación para los enlaces del footer */
+.footer-links a {
+    position: relative;
+}
+
+.footer-links a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::before {
+    width: 100%;
+}
+
+/* Animación para campos de formulario */
+.form-input {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    transform: scale(1.02);
+}
+
+/* Añade este código al final de tu archivo animations.css para optimizar las animaciones en móviles */
+
+/* Optimización para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Animaciones más ligeras para mejorar el rendimiento */
+    .profile-img {
+        animation: fadeIn 0.8s ease forwards, float 4s ease-in-out infinite;
+        animation-delay: 0.5s, 0.5s;
+    }
+    
+    /* Ajustar el efecto de float para ser menos intenso en móviles */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px); /* Menos movimiento para evitar exceso en pantallas pequeñas */
+        }
+    }
+    
+    /* Ajustar animaciones de entrada */
+    .hero-greeting, .hero-title, .hero-description, .btn, .hero-social {
+        animation-duration: 0.4s; /* Un poco más rápido en móviles */
+    }
+    
+    /* Reducir la intensidad de algunos efectos para mejorar el rendimiento */
+    .skill-card:hover {
+        transform: translateY(-5px); /* Movimiento más sutil al hacer hover */
+    }
+    
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    /* Optimizar las animaciones de revelación */
+    .reveal {
+        transform: translateY(20px); /* Menos distancia para aparecer */
+    }
+    
+    /* Optimizar los efectos de hover */
+    .btn::before {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Adaptar animación del cursor para dispositivos táctiles */
+    .hero-title span::after {
+        animation: blink 1.2s step-end infinite;
+    }
+}
+
+/* Ajustar animaciones para pantallas muy pequeñas */
+@media (max-width: 380px) {
+    /* Reducir aún más algunas animaciones para mejorar el rendimiento */
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05); /* Pulso más sutil */
+        }
+    }
+}
+
+/* Optimizaciones para reducir el uso de CPU en dispositivos móviles */
+@media (max-width: 768px) {
+    /* Usar transform en lugar de animaciones más pesadas cuando sea posible */
+    .btn:hover, .social-icon:hover {
+        transform: translateY(-3px);
+        transition: transform 0.3s ease;
+    }
+    
+    /* Reducir partículas para mejorar rendimiento */
+    .particle {
+        opacity: 0.7; /* Menos visible para reducir distracción */
+    }
+}
+
+/* Añadir algunas animaciones táctiles específicas para móviles */
+@media (max-width: 768px) {
+    /* Efecto de pulsación para los botones en móviles */
+    @keyframes touch-pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.95);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .btn:active {
+        animation: touch-pulse 0.3s ease;
+    }
+    
+    /* Mejor feedback visual en elementos interactivos */
+    .social-icon:active, .nav-links a:active, .project-card:active {
+        opacity: 0.7;
+        transition: opacity 0.1s ease;
+    }
+}
