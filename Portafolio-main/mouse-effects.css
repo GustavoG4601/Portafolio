@@ -1,0 +1,54 @@
+/* Crea un nuevo archivo llamado "mouse-effects.css" con estos estilos */
+
+.mouse-trail-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.mouse-trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(56, 182, 255, 0.6);
+    transform: translate(0, 0);
+    pointer-events: none;
+    mix-blend-mode: screen;
+    filter: blur(1px);
+    box-shadow: 0 0 8px rgba(56, 182, 255, 0.8);
+}
+
+/* Versión alternativa con efecto de neón */
+/*
+.mouse-trail {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(56, 182, 255, 0.2);
+    transform: translate(0, 0);
+    pointer-events: none;
+    box-shadow: 0 0 15px 2px rgba(56, 182, 255, 0.8);
+}
+*/
+
+/* Versión alternativa con efecto de línea */
+/*
+.mouse-trail {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 20%;
+    background-color: rgba(56, 182, 255, 0.7);
+    transform: translate(0, 0);
+    pointer-events: none;
+    transition: all 0.1s ease;
+    box-shadow: 0 0 5px rgba(56, 182, 255, 0.5);
+}
+*/

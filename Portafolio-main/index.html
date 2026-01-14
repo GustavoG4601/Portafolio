@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#38b6ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <title>Gustavo Guerra | Desarrollador Web</title>
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    
+    <!-- Preloads para mejora de rendimiento -->
+    <link rel="preload" href="imagen.jpeg" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aec020f271.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="mouse-effects.css">
+    <link rel="stylesheet" href="tech-orbit.css">
+</head>
+<body class="loaded">
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo"><span>Dev</span> Gustavo<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Inicio</a></li>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#experience">Trayectoria</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gustavo-adolfo-guerra-marquez-118161255/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/GustavoG4601" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/573046601648" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hola Mundo, Soy Gustavo</p>
+                <h1 class="hero-title">Ingeniero en Sistemas y <span id="typing-text">Desarrollador Web</span></h1>
+                <p class="hero-description">Ingeniero de Sistemas enfocado en proyectos digitales que combinan tecnología, impacto social y experiencia de usuario.</p>
+                <div class="hero-buttons">
+                    <a href="assets/Hoja de vida.pdf" download="Hoja de vida.pdf" class="btn">Descargar CV</a>
+                    <a href="#contact" class="btn btn-outline">Contáctame</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/gustavo-adolfo-guerra-marquez-118161255/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/GustavoG4601" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/573046601648" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/Imagen1.png" alt="Gustavo Guerra" class="profile-img">
+                <!-- El sistema de órbitas será insertado aquí por JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="about-card">
+                        <div class="about-header">
+                            <i class="fas fa-user-circle"></i>
+                            <h3>¿Quién Soy?</h3>
+                        </div>
+                        <p>Ingeniero de Sistemas de la Universidad de Cartagena, especializado en desarrollo Fullstack y con experiencia en la implementación de soluciones tecnológicas orientadas a la mejora de procesos y experiencias digitales.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-header">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Mi Objetivo</h3>
+                        </div>
+                        <p>Desarrollar soluciones web funcionales y atractivas que generen valor real, combinando tecnología, diseño y organización.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-header">
+                            <i class="fas fa-fingerprint"></i>
+                            <h3>Mi Perfil</h3>
+                        </div>
+                        <p>Apasionado por la creación de interfaces modernas con React, manejo de estados, APIs REST y metodologías ágiles como Scrum y Kanban. Me destaco por mi visión estratégica y trabajo en equipo.</p>
+                    </div>
+                </div>
+<br>
+ 
+
+<div class="skills-section">
+ <br>
+  <br>
+    <div class="career-card">
+
+      <div class="career-header">
+        <div class="career-title">
+          <span class="career-icon"></span>
+          <h2>Trayectoria</h2>
+        </div>
+
+        
+
+      <div class="timeline">
+
+        <!-- Ingeniero -->
+        <div class="timeline-item active">
+          <span class="dot"></span>
+
+          <div class="content">
+            <div class="top">
+              <h3>Ingeniero de Sistemas</h3>
+              <span class="date">Ene. 2026 - Presente</span>
+            </div>
+
+            <p class="company">
+              Universidad de Cartagena · Presencial
+            </p>
+
+            <p class="description">
+              Gestión y soporte avanzado de plataformas educativas virtuales de posgrados.
+              Desarrollo, optimización y mejora de sistemas, brindando apoyo tecnológico a
+              procesos académicos y administrativos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pasante -->
+        <div class="timeline-item">
+          <span class="dot"></span>
+
+          <div class="content">
+            <div class="top">
+              <h3>Pasante de Ingeniero de Sistemas</h3>
+              <span class="date">Ago. 2025 - Dic. 2025</span>
+            </div>
+
+            <p class="company">
+              Universidad de Cartagena · Híbrido
+            </p>
+
+            <p class="description">
+              Soporte en desarrollo y gestión de plataformas educativas virtuales para programas
+              de posgrados. Apoyo técnico, gestión de contenidos y acompañamiento a docentes y
+              administrativos.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+                <div class="skills-section">
+                    <h3 class="skills-title">Mis Habilidades Técnicas</h3>
+                    <div class="skills-container">
+                        <div class="skill-card">
+                            <i class="fab fa-html5 skill-icon" style="color:#E34F26"></i>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-node-js skill-icon" style="color:#339933"></i>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt skill-icon" style="color:#1572B6"></i>
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-bootstrap skill-icon" style="color:#7952B3"></i>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database skill-icon" style="color:#00758F"></i>
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js skill-icon" style="color:#F7DF1E"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react skill-icon" style="color:#61DBFB"></i>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-java skill-icon" style="color:#007396"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt skill-icon" style="color:#F05032"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python-logo-notext" width="40" style="color:#181717">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind-CSS-logo" width="40" style="color:#38B2AC">
+                            <span class="skill-name">Tailwind CSS</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-php skill-icon" style="color:#777BB4"></i>
+                            <span class="skill-name">PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Principales</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/cerdy.png" alt="Proyecto SICT" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Pagina web CerdycomJf</h3>
+                        <p class="project-description">
+                            Pagina web interactiva para la empresa CerdycomJf, que ofrece servicios de seguridad, rastreo, internet entre otros. La web permite a los usuarios solicitar servicios, ver información de contacto y conocer más sobre la empresa.
+                        </p>
+                        <div class="project-tech">HTML • CSS • JavaScript • Bootstrap • React • Vite •Trello</div>
+                    </div>
+                </div>
+               
+                <div class="project-card">
+                    <img src="assets/Psymanage.png" alt="Nuevo Proyecto 1" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title"> Plataforma de Psicología</h3>
+                        <p class="project-description">
+                            Software de gestión psicológica diseñado exclusivamente para el uso de las profesionales en psicología. Su objetivo principal es facilitar el almacenamiento, organización y seguimiento de la información clínica y emocional de los pacientes internos, específicamente docentes y trabajadores de cualquier empresa.
+                            
+                        </p>
+                        <div class="project-tech">HTML • CSS • JavaScript • Bootstrap • Node.js • Docker-PostgreSQL • React • Vite •Trello   </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/cuentas.png" alt="Nuevo Proyecto 2" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title"> Software de nomina para empresa The English Easy way</h3>
+                        <p class="project-description">
+                            Software de nómina desarrollado para la empresa The English Easy Way, que permite gestionar y automatizar el proceso de pago de salarios a los empleados y docentes de la institución, ademas de llevar el control de todos los procesos.
+                        </p>
+                        <div class="project-tech">HTML • CSS • JavaScript • PHP • MySQL  </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/campus.png" alt="Portafolio Web" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title"> Campus programas virtuales Universidad de cartagena</h3>
+                        <p class="project-description">
+                            Campus virtual desarrollado para la Universidad de Cartagena, que permite a los estudiantes de programas virtuales y aspirates a conocer información relevante sobre los programas, inscribirse en cursos e interactuar con la comunidad académica.
+                        <p></p>
+                        <div class="project-tech">HTML • JavaScript •CSS • React</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title">Trabajemos Juntos</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p class="contact-text">
+          Estoy abierto a colaborar en proyectos creativos y retadores que generen impacto. Si tienes una idea, una consulta o simplemente quieres conectar, no dudes en escribirme por el formulario de contacto o a través de mis redes sociales.
+        </p>
+        <div class="hero-social">
+          <a href="https://www.linkedin.com/in/gustavo-adolfo-guerra-marquez-118161255/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/GustavoG4601" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://wa.me/573046601648" target="_blank" class="social-icon">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <form
+        action="https://formspree.io/f/mldbywav"
+        method="POST"
+        class="contact-form"
+        id="contactForm"
+      >
+        <div class="form-group">
+          <input type="text" name="nombre" placeholder="Nombre" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Correo Electrónico" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <textarea name="mensaje" placeholder="Tu mensaje" class="form-input" required></textarea>
+        </div>
+        <button type="submit" class="btn submit-btn">Enviar Mensaje</button>
+
+        <div class="form-success-message" style="display: none; margin-top: 20px;">
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>¡Mensaje Enviado!</h3>
+          <p>Gracias por contactarme. Te responderé lo antes posible.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const successMessage = form.querySelector('.form-success-message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+
+      if (response.ok) {
+        form.reset();
+        successMessage.style.display = 'block';
+      } else {
+        alert('Oops! Hubo un problema al enviar el formulario.');
+      }
+    } catch (error) {
+      alert('Oops! Hubo un error al enviar el formulario.');
+    }
+  });
+</script>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/gustavo-adolfo-guerra-marquez-118161255/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/GustavoG4601" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/573046601648" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Inicio</a>
+                <a href="#about">Sobre Mí</a>
+                <a href="#experience">Trayectoria</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <p class="copyright">© 2025 Gustavo Guerra. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Div para feedback táctil -->
+    <div id="touch-feedback" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;"></div>
+
+    <!-- Partículas de fondo -->
+    <div class="particles" id="particles"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Script para las partículas optimizado para móviles -->
+    <script>
+        // Detectar si es un dispositivo móvil
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        // Función para crear partículas en el fondo (con ajustes para móviles)
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            // Reducir la cantidad en móviles para mejor rendimiento
+            const numberOfParticles = isMobile ? 20 : 50;
+            
+            for (let i = 0; i < numberOfParticles; i++) {
+                const size = Math.random() * (isMobile ? 4 : 5) + 1;
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Posición aleatoria
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                
+                // Estilo
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                particle.style.opacity = Math.random() * (isMobile ? 0.4 : 0.5) + 0.1;
+                
+                // Añadir al DOM
+                particlesContainer.appendChild(particle);
+                
+                // Animación
+                animateParticle(particle);
+            }
+        }
+
+        function animateParticle(particle) {
+            // Movimiento aleatorio (más lento en móviles)
+            const speed = Math.random() * (isMobile ? 15 : 20) + (isMobile ? 5 : 10);
+            const direction = Math.random() * 360;
+            const radians = direction * Math.PI / 180;
+            
+            const moveX = Math.cos(radians) * speed;
+            const moveY = Math.sin(radians) * speed;
+            
+            // Posición inicial
+            let posX = parseFloat(particle.style.left);
+            let posY = parseFloat(particle.style.top);
+            
+            function move() {
+                // Más lento en móviles para mejor rendimiento
+                const factor = isMobile ? 0.007 : 0.01;
+                posX += moveX * factor;
+                posY += moveY * factor;
+                
+                // Rebotar en los bordes
+                if (posX < 0 || posX > 100) {
+                    posX = Math.max(0, Math.min(100, posX));
+                }
+                if (posY < 0 || posY > 100) {
+                    posY = Math.max(0, Math.min(100, posY));
+                }
+                
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                
+                // Optimización para móviles: usar timeout en vez de requestAnimationFrame directo
+                if (isMobile) {
+                    setTimeout(() => requestAnimationFrame(move), 30);
+                } else {
+                    requestAnimationFrame(move);
+                }
+            }
+            
+            move();
+        }
+
+        // Iniciar las partículas cuando se carga el documento
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            // Añadir clase loaded explícitamente
+            document.body.classList.add('loaded');
+            
+            // Añadir soporte para efecto táctil en dispositivos móviles
+            if (isMobile) {
+                // Crear efecto de ondas en toques
+                document.addEventListener('touchstart', function(e) {
+                    if (e.target.closest('a, button, .project-card, .skill-card, .social-icon')) {
+                        const touchFeedback = document.getElementById('touch-feedback');
+                        const x = e.touches[0].clientX;
+                        const y = e.touches[0].clientY;
+                        
+                        // Crear el elemento de efecto
+                        const ripple = document.createElement('div');
+                        ripple.style.position = 'absolute';
+                        ripple.style.width = '20px';
+                        ripple.style.height = '20px';
+                        ripple.style.background = 'rgba(255, 255, 255, 0.4)';
+                        ripple.style.borderRadius = '50%';
+                        ripple.style.transform = 'translate(-50%, -50%)';
+                        ripple.style.left = x + 'px';
+                        ripple.style.top = y + 'px';
+                        ripple.style.animation = 'ripple-effect 0.6s linear';
+                        
+                        // Agregar al DOM
+                        touchFeedback.appendChild(ripple);
+                        
+                        // Eliminar después de la animación
+                        setTimeout(() => {
+                            ripple.remove();
+                        }, 600);
+                    }
+                }, false);
+                
+                // Estilos para la animación de ondas
+                if (!document.getElementById('ripple-styles')) {
+                    const style = document.createElement('style');
+                    style.id = 'ripple-styles';
+                    style.textContent = `
+                        @keyframes ripple-effect {
+                            0% {
+                                width: 0px;
+                                height: 0px;
+                                opacity: 0.5;
+                            }
+                            100% {
+                                width: 100px;
+                                height: 100px;
+                                opacity: 0;
+                            }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+                
+                // Hacer que el menú se cierre al hacer clic fuera
+                document.addEventListener('click', (e) => {
+                    const header = document.getElementById('header');
+                    const menuBtn = document.getElementById('menuBtn');
+                    
+                    if (header.classList.contains('menu-open') && 
+                        !e.target.closest('.nav-links') && 
+                        !e.target.closest('#menuBtn')) {
+                        header.classList.remove('menu-open');
+                        if (menuBtn.querySelector('i').classList.contains('fa-times')) {
+                            menuBtn.querySelector('i').classList.remove('fa-times');
+                            menuBtn.querySelector('i').classList.add('fa-bars');
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+<script src="mouse-effects.js"></script>
+<script src="tech-orbit.js"></script>
+</body>
+</html>
