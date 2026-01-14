@@ -40,24 +40,31 @@ function setupOrbitSystem() {
     orbitContainer.id = 'orbit-container';
     heroImage.appendChild(orbitContainer);
     
-    // Tecnologías a mostrar - actualizado para incluir Node.js
+    // Tecnologías a mostrar - actualizado para incluir Node.js, Tailwind y PHP
     const technologies = [
-  { name: 'HTML', icon: 'fab fa-html5', color: '#E34F26' },
-  { name: 'Node.js', icon: 'fab fa-node-js', color: '#339933' },
-  { name: 'CSS', icon: 'fab fa-css3-alt', color: '#1572B6' },
-  { name: 'Bootstrap', icon: 'fab fa-bootstrap', color: '#7952B3' },
-  { name: 'MySQL', icon: 'fas fa-database', color: '#00758F' },
-  { name: 'JavaScript', icon: 'fab fa-js', color: '#F7DF1E' },
-  { name: 'React', icon: 'fab fa-react', color: '#61DBFB' },
-  { name: 'Java', icon: 'fab fa-java', color: '#007396' },
-  { name: 'Git', icon: 'fab fa-git-alt', color: '#F05032' },
-  { 
-    name: 'Python', 
-    type: 'img', 
-    src: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg', 
-    color: '#181717' 
-  }
-];
+      { name: 'HTML', icon: 'fab fa-html5', color: '#E34F26' },
+      { name: 'Node.js', icon: 'fab fa-node-js', color: '#339933' },
+      { name: 'CSS', icon: 'fab fa-css3-alt', color: '#1572B6' },
+      { name: 'Bootstrap', icon: 'fab fa-bootstrap', color: '#7952B3' },
+      { name: 'MySQL', icon: 'fas fa-database', color: '#00758F' },
+      { name: 'JavaScript', icon: 'fab fa-js', color: '#F7DF1E' },
+      { name: 'React', icon: 'fab fa-react', color: '#61DBFB' },
+      { name: 'Java', icon: 'fab fa-java', color: '#007396' },
+      { name: 'Git', icon: 'fab fa-git-alt', color: '#F05032' },
+      { 
+        name: 'Python', 
+        type: 'img', 
+        src: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg', 
+        color: '#181717' 
+      },
+      { 
+        name: 'Tailwind CSS', 
+        type: 'img', 
+        src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg', 
+        color: '#38B2AC'
+      },
+      { name: 'PHP', icon: 'fab fa-php', color: '#777BB4' }
+    ];
 
     
     // Crear las órbitas
@@ -69,8 +76,8 @@ function setupOrbitSystem() {
         orbit.className = `orbit orbit-${i+1}`;
         orbitContainer.appendChild(orbit);
         
-        // Número de tecnologías en esta órbita - ajustado para 10 tecnologías
-        const techsPerOrbit = [3, 4, 3]; // Distribuir 10 tecnologías en 3 órbitas
+        // Número de tecnologías en esta órbita - ajustado para 12 tecnologías
+        const techsPerOrbit = [4, 4, 4]; // Distribuir 12 tecnologías en 3 órbitas
         const techPerOrbit = techsPerOrbit[i];
         
         // Distribuir las tecnologías en esta órbita
@@ -80,9 +87,9 @@ function setupOrbitSystem() {
             if (i === 0) {
                 techIndex = j;
             } else if (i === 1) {
-                techIndex = 3 + j;
+                techIndex = 4 + j;
             } else {
-                techIndex = 7 + j;
+                techIndex = 8 + j;
             }
             
             const tech = technologies[techIndex];
