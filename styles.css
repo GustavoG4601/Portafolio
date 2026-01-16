@@ -1513,7 +1513,7 @@ textarea {
 
 @media (max-width: 576px) {
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -1761,6 +1761,12 @@ textarea {
 @media (max-width: 768px) {
   .career-card {
     padding: 2rem 1.5rem;
+  }
+
+  .career-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
   .top {
