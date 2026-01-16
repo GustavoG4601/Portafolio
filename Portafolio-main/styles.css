@@ -655,7 +655,7 @@ footer {
         height: 250px;
     }
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -713,7 +713,7 @@ footer {
         font-size: 2rem;
     }
     .skills-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -1472,6 +1472,7 @@ textarea {
 /* 11. Ajustes específicos para Safari en iOS */
 @supports (-webkit-touch-callout: none) {
     .btn {
+        appearance: none;
         -webkit-appearance: none; /* Corrige apariencia de botones en iOS */
     }
 }
@@ -1758,7 +1759,6 @@ textarea {
   color: #cfdcff;
 }
 
-git status
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .career-card {
@@ -1769,5 +1769,33 @@ git status
     flex-direction: column;
     align-items: flex-start;
     gap: 0.4rem;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .content {
+    padding-left: 20px;
+  }
+
+  .timeline-item .dot {
+    left: -3px;
+  }
+
+  .top h3 {
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 0.65rem;
+  }
+
+  .company {
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
   }
 }
